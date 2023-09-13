@@ -1,4 +1,4 @@
-const baseURL =  "http://localhost:8080";
+const baseURL =  "https://cute-lime-trout-boot.cyclic.app";
 let editor;
 
 const onGotAmdLoader = () => {
