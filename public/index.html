@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Coverter, Debugger and Quality Checker</title>
+</head>
+<style>
+    #editor-container {
+      height: 400px;
+      width: 50%;
+      float: left;
+    }
+    #output-container {
+      height: 400px;
+      width: 50%;
+      float: left;
+      background-color: rgb(35, 34, 34);
+      color: #ffff;
+    }
+    #btn-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+  </style>
+<body>
+    <div id="btn-container">
+        <select id="language">
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="cpp">C++</option>
+            <option value="java">Java</option>
+            <option value="c">C</option>
+        </select>
+        <button id="convert-btn">Convert</button>
+        <button id="debug-btn">Debug</button>
+        <button id="quality-btn">Quality Check</button>
+    </div>
+    <div id="editor-container"></div>
+    <div id="output-container">
+        <h1>Output</h1>
+        <div id="output_content"></div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.27.0/min/vs/loader.min.js"></script>
+<script src="index.js"></script>
+</html>
